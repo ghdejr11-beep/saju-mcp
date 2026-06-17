@@ -1,0 +1,39 @@
+{
+  "name": "saju-mcp",
+  "version": "0.1.0",
+  "description": "MCP server wrapping the Saju API (Korean Four Pillars / Bazi) — calculate, interpret, compatibility, daily fortune in 10 languages.",
+  "license": "LicenseRef-Proprietary",
+  "author": "KunStudio",
+  "type": "module",
+  "bin": {
+    "saju-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:actor": "node dist/actor.js",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "apify": "^3.7.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

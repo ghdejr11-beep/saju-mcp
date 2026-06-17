@@ -1,0 +1,26 @@
+{
+    "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+    "actorSpecification": 1,
+    "name": "saju-mcp",
+    "title": "Saju MCP Server (Korean Four Pillars / Bazi)",
+    "description": "MCP server (Streamable HTTP) for Korean Four Pillars of Destiny (사주팔자 / Bazi): calculate, interpret, compatibility (궁합), and daily fortune in 10 languages. Pay per tool call.",
+    "version": "0.1",
+    "buildTag": "latest",
+    "usesStandbyMode": true,
+    "dockerfile": "../Dockerfile",
+    "webServerMcpPath": "/mcp",
+    "minMemoryMbytes": 256,
+    "maxMemoryMbytes": 1024,
+    "environmentVariables": {
+        "SAJU_API_KEY": "@SAJU_API_KEY",
+        "SAJU_API_BASE": "https://saju-api.pages.dev"
+    },
+    "input": {
+        "title": "Saju MCP Server input",
+        "description": "This MCP server runs in Standby mode and is driven by MCP tool calls over Streamable HTTP at /mcp. No run input is required.",
+        "type": "object",
+        "schemaVersion": 1,
+        "properties": {},
+        "required": []
+    }
+}

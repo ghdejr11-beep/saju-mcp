@@ -1,0 +1,7 @@
+{
+    "tool-call": {
+        "eventTitle": "Saju tool call",
+        "eventDescription": "Flat fee charged once per successful Saju MCP tool call (calculate, interpret, compatibility, or daily).",
+        "eventPriceUsd": 0.01
+    }
+}
