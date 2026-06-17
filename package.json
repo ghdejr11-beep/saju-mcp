@@ -5,6 +5,12 @@
   "license": "LicenseRef-Proprietary",
   "author": "KunStudio",
   "type": "module",
+  "mcpName": "io.github.ghdejr11-beep/saju-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghdejr11-beep/saju-mcp.git"
+  },
+  "homepage": "https://saju-api.pages.dev",
   "bin": {
     "saju-mcp": "dist/index.js"
   },
