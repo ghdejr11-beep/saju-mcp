@@ -1,0 +1,52 @@
+# Smithery configuration — https://smithery.ai/docs/config/yaml
+name: saju-mcp
+displayName: "Saju API — Korean Four Pillars & BaZi Astrology"
+description: |
+  MCP server wrapping the Saju API for Korean Four Pillars of Destiny (사주팔자) and
+  Chinese BaZi (八字) calculations. KASI-validated lunar conversion, Ten Gods (十神),
+  Yongshin (用神), major luck cycles (Daeun), and couple compatibility — in 10 languages.
+  Free tier: 100 requests/day, no credit card required.
+version: "0.1.0"
+homepage: https://saju-api.pages.dev
+repository: https://github.com/ghdejr11-beep/saju-mcp
+license: LicenseRef-Proprietary
+
+categories:
+  - astrology
+  - entertainment
+  - lifestyle
+
+tags:
+  - saju
+  - korean-astrology
+  - four-pillars
+  - bazi
+  - horoscope
+  - fortune
+  - compatibility
+  - birth-chart
+  - east-asian
+  - astrology
+
+# Runtime configuration
+startCommand:
+  type: stdio
+  command: npx
+  args:
+    - -y
+    - saju-mcp
+
+env:
+  - name: SAJU_API_KEY
+    description: "Your Saju API key (free tier: 100 req/day). Get one at https://saju-api.pages.dev/quickstart"
+    required: true
+
+tools:
+  - name: saju_calculate
+    description: "Compute full Korean Four Pillars (Saju) chart from birth date and time. Returns eight characters (pillars), five-element distribution, Day Master, zodiac sign."
+  - name: saju_interpret
+    description: "Full Saju reading: Ten Gods (십신), hidden stems, Yongshin (용신, Useful God), Daeun (대운) major luck cycles, localized narrative summaries."
+  - name: saju_compatibility
+    description: "Two-person compatibility score (0–100) with element balance, Day Master relation, and branch harmony/clash breakdown."
+  - name: saju_daily
+    description: "Daily fortune snapshot — score and advice for a given Day Master and date. Cacheable by Day Master."
