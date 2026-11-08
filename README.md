@@ -1,5 +1,8 @@
 # Saju MCP — Korean Four Pillars & BaZi Astrology
 
+Service home: https://sajuapp.app
+
+
 [![npm](https://img.shields.io/npm/v/saju-mcp)](https://www.npmjs.com/package/saju-mcp)
 [![node](https://img.shields.io/node/v/saju-mcp)](https://www.npmjs.com/package/saju-mcp)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-listed-blue)](https://registry.modelcontextprotocol.io/v0/servers?search=saju-mcp)
